@@ -6,7 +6,7 @@ Green Sock Animation Platform
 
 ## Subject 
 
-Intégration maquette réalisé sur la cuisine moléculaire.
+Intégration maquette réalisée sur la cuisine moléculaire.
 
 - HTML5
 - CSS3
