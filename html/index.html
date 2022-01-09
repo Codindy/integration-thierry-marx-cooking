@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Marx cooking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js" integrity="sha512-Aa3UvVB5yhH/dNXMt8nGZDD15Xmntq1ODcavfgT8omSLaomrJKYybWczzc6UJYDUAdqR1hmDJ47V4Ux50PPIuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+</head>
+<body data-scroll-container>
+    <header class="mx-md-auto mx-lg-5 mx-sm-auto">
+        <nav class="p-5 navbar-expand-lg">
+            <div class="d-lg-flex align-items-md-start">
+                <div class="d-flex justify-content-between">
+                    <a class="navbar-brand" href="#"><div class="logo" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"></div></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link accueil" aria-current="page" href="/html/index.html">Accueil</a>
+                        <div><i class="far fa-circle"></i></div>
+                      </li>
+                      <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link recettes-link" href="/html/recettes.html">Recettes</a>
+                        <div><i class="far fa-circle"></i></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">contact</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <a href="#" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg" class="right-nav">inscription</a>
+                      <a href="#" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg-2"><i class="far fa-user-circle ms-3 right-nav mt-2"></i></a>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+          <!-- modal inscription -->
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog">
+              <div class="modal-content p-5">
+                <div class="modal-body">
+                  <form class="p-5 pt-2 d-flex flex-column">
+                    <h2 class="modal-title pb-5 d-flex justify-content-center align-items-center"> 
+                      <div class="d-flex align-self-center"><i class="fas fa-circle circle1"></i></div>
+                      inscription
+                      <div class="d-flex align-self-center"><i class="fas fa-circle circle1"></i></div>
+                    </h2>
+                    <div class="form-group d-flex mt-3">
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Prénom*">
+                    </div>
+                      <div class="form-group d-flex mt-3">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Nom*">
+                      </div>
+                      <div class="form-group d-flex mt-3">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Email*">
+                      </div>
+                      <div class="form-group d-flex mt-3">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Mot de passe*">
+                      </div>  
+                    </form>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="modal-btn">créer un compte</a>
+                    </div>
+                    <p class="pt-5 ms-5">* Ces champs sont obligatoires</p>
+                  </div>
+              </div>
+            </div>
+          </div>   
+          <!-- modal connexion -->
+           <div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog">
+               <div class="modal-content p-5">
+                 <div class="modal-body">
+                   <form class="p-5 pt-2 d-flex flex-column">
+                     <h2 class="modal-title pb-5 d-flex justify-content-center align-items-center"> 
+                       <div class="d-flex align-self-center"><i class="fas fa-circle circle2"></i></div>
+                       connexion
+                       <div class="d-flex align-self-center"><i class="fas fa-circle circle2"></i></div>
+                      </h2>
+                      <div class="form-group d-flex mt-3">
+                        <input type="text" class="form-control control-form" id="recipient-name" placeholder="Email*">
+                      </div>
+                      <div class="form-group d-flex mt-3">
+                        <input type="text" class="form-control control-form" id="recipient-name" placeholder="Mot de passe*">
+                      </div>  
+                      <p class="text-decoration-underline mt-1">Mot de passe oublié ?</p>
+                    </form>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="modal-btn-2">se connecter</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div> 
+          <div class="w-75 mx-auto">      
+            <div class="banniere-header d-lg-flex d-md-flex d-sm-flex flex-md-column flex-sm-column flex-lg-row flex-xl-row flex-xxl-row align-items-xl-center align-items-lg-center align-items-md-start align-items-sm-center justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-sm-center">
+              <div class="assiete">
+              </div>  
+              
+              <div class="banniere d-flex flex-column justify-content-start align-items-center">
+                <h2>Apprenez les <b>meilleures</b><br>recettes de la</h2>
+                <h1>CuisineMoléculaire</h1>
+                <h3>Facile et rapide !</h3>
+                <div class="d-flex">
+                  <div><i class="fas fa-circle circle1"></i></div>
+                  <div><i class="fas fa-circle circle2"></i></div>
+                  <div><i class="fas fa-circle circle3"></i></div>
+                </div>
+                <a href="/html/recettes.html" class="mt-5 d-none d-lg-block d-md-block">commencer</a>
+                <a href="/html/recettes.html" class="btn-commencer m-5 d-block d-lg-none d-md-none">commencer</a>
+              </div>
+            </div>
+          </div>          
+        </header>
+    <main>
+        <section class="bgColor pt-5 pb-5">
+          <div class="album py-5 article-header w-75 mx-auto ">
+            <div class="d-flex align-items-center justify-content-center mt-5 mb-3">
+              <div class="container" data-scroll data-scroll-speed="3">        
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3 justify-content-sm-center">
+                  <div class="thierrymarx col justify-content-center align-items-center">
+                   <div data-scroll data-scroll-speed="2" class="thierryMarx"></div>
+                  </div>
+                  <div class="col d-flex">
+                  <article class="d-flex flex-column justify-content-around align-items-center ms-lg-3 ms-md-3 ms-sm-0">
+                    <div>
+                        <h1 data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.18" data-scroll-speed="0.5">Thierry Marx</h1>
+                        <p data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.14" data-scroll-speed="0.5">"Il est temps de démystifier la cuisine moléculaire"</p>
+                    </div>
+                    <p class="text-break" data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.10" data-scroll-speed=0.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Repellat eum, nesciunt placeat odit accusantium ipsum dolore <br>
+                        dolores laboriosam ipsa excepturi, recusandae animi, dolor ad nobis <br>
+                        cumque iste possimus! Architecto, minima?
+                        <div class="d-flex justify-content-center mt-5" data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.08" data-scroll-speed="0.5">
+                            <a href="#" class="lire">lire</a>
+                        </div>
+                    </p>
+                  </article>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5 pb-5 w-75 mx-auto" data-scroll data-scroll-speed="5">
+          <div class="album py-5 ">
+            <div class="d-flex align-items-center justify-content-center mt-5 mb-3">
+              <h2 class="titre" data-scroll data-scroll-speed="1">Nos dernières recettes</h2>
+          </div>
+            <div class="container">        
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card card-red">
+                    <img src="/assets/moleculaire1.png" alt="photo perles d'alginates" >
+                    <div class="card-body">
+                      <h2 class="card-text text-center">Les perles d'alginates</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-yellow">
+                    <img src="/assets/ilesfolttantes.png" alt="photo ile flottante" >
+                    <div class="card-body">
+                      <h2 class="card-text text-center">île flottante moléculaire</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-gray">
+                    <img src="/assets/bullesdedaiquiri.png" alt="photo bulle de Daiquiri" >
+                    <div class="card-body text-center">
+                      <h2 class="card-text">Boisson Bulle de Daiquiri</h2>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="d-flex align-items-center justify-content-center mt-5 mb-3">
+                <a href="/html/recettes.html" class="voir">voir</a>
+            </div>
+            </section>
+        <section class="bgColor avis pt-5 pb-5" data-scroll data-scroll-speed="3">
+            <div class="w-75 mx-auto d-flex flex-column align-items-center">
+                <h2 class="titre" data-scroll data-scroll-speed="1">Vos avis</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5">
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus!"</p>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus!"</p>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-black" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-black"></button>
+                    </div>
+                  </div>
+                <div></div>
+            </div>
+        </section>
+        <div class="w-75 mx-auto d-flex justify-content-center">
+            <div class="imgAccueil mt-5"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="p-5 pb-3">
+            <div class="row flex-column flex-lg-row flex-md-row align-items-center">
+                <nav class="nav-footer col-10 d-flex flex-column flex-lg-row flex-md-row justify-content-start align-items-center">
+                    <a href="/html/index.html" class="active">Accueil</a>
+                    <a href="/html/recettes.html">Recettes</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="logos col-lg-2 col-md-2 col-sm-1 d-flex flex-row justify-content-center">
+                    <a href="#"><img src="/assets/instagram.png" alt="logo instagram"></a>
+                    <a href="#"><img src="/assets/facebook.png" alt="logo facebook"></a>
+                    <a href="#"><img src="/assets/twitter.png" alt="logo twitter"></a>
+                </div>
+            </div>
+            <p>Ⓒ2022, THIERRY MARX COOKING - Site de démonstration intégration</p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

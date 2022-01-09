@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Marx cooking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body >
+  <header class="mx-md-auto mx-lg-5 mx-sm-auto">
+    <nav class="p-5 navbar-expand-lg">
+        <div class="d-lg-flex align-items-md-start">
+            <div class="d-flex justify-content-between">
+                <a class="navbar-brand" href="#"><div class="logo" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"></div></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link accueil" aria-current="page" href="/html/index.html">Accueil</a>
+                    <div><i class="far fa-circle"></i></div>
+                  </li>
+                  <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link recettes-link" href="/html/recettes.html">Recettes</a>
+                    <div><i class="far fa-circle"></i></div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <a href="#" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg" class="right-nav">inscription</a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg-2"><i class="far fa-user-circle ms-3 right-nav mt-2"></i></a>
+                </form>
+              </div>
+            </div>
+          </nav>
+      <!-- modal inscription -->
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog">
+          <div class="modal-content p-5">
+            <div class="modal-body">
+              <form class="p-5 pt-2 d-flex flex-column">
+                <h2 class="modal-title pb-5 d-flex justify-content-center align-items-center"> 
+                  <div class="d-flex align-self-center"><i class="fas fa-circle circle1"></i></div>
+                  inscription
+                  <div class="d-flex align-self-center"><i class="fas fa-circle circle1"></i></div>
+                </h2>
+                <div class="form-group d-flex mt-3">
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Prénom*">
+                </div>
+                  <div class="form-group d-flex mt-3">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Nom*">
+                  </div>
+                  <div class="form-group d-flex mt-3">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Email*">
+                  </div>
+                  <div class="form-group d-flex mt-3">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Mot de passe*">
+                  </div>  
+                </form>
+                <div class="d-flex justify-content-center">
+                  <a href="#" class="modal-btn">créer un compte</a>
+                </div>
+                <p class="pt-5 ms-5">* Ces champs sont obligatoires</p>
+              </div>
+          </div>
+        </div>
+      </div>   
+      <!-- modal connexion -->
+       <div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog">
+           <div class="modal-content p-5">
+             <div class="modal-body">
+               <form class="p-5 pt-2 d-flex flex-column">
+                 <h2 class="modal-title pb-5 d-flex justify-content-center align-items-center"> 
+                   <div class="d-flex align-self-center"><i class="fas fa-circle circle2"></i></div>
+                   connexion
+                   <div class="d-flex align-self-center"><i class="fas fa-circle circle2"></i></div>
+                  </h2>
+                  <div class="form-group d-flex mt-3">
+                    <input type="text" class="form-control control-form" id="recipient-name" placeholder="Email*">
+                  </div>
+                  <div class="form-group d-flex mt-3">
+                    <input type="text" class="form-control control-form" id="recipient-name" placeholder="Mot de passe*">
+                  </div>  
+                  <p class="text-decoration-underline mt-1">Mot de passe oublié ?</p>
+                </form>
+                <div class="d-flex justify-content-center">
+                  <a href="#" class="modal-btn-2">se connecter</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>   
+</header>
+    <main class="recettes w-75 mx-auto">
+        <section class="py-5 pt-0 text-center container">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 mx-auto pb-5">
+                <h1 class="text-decoration-underline">Déconstruction de cacao</h1>
+                <div class="infos-recette d-flex justify-content-center align-items-center py-3 ">
+                    <div class="infos-recettes px-5 pr-2 d-flex justify-content-center align-items-center">
+                        <img src="/assets/userfood.png" alt="icon nombre personnes" class="me-3" width="44" height="44">
+                        <h3 class="pe-lg-5 pe-md-0 me-3">1 pers</h3>
+                        <img src="/assets/clock.png" alt="icon minuteur" class="me-3" width="44" height="44">
+                        <h3 class="pe-lg-5 pe-md-0 me-3">00:15</h3>
+                        <img src="/assets/casserole.png" alt="icon casserole" class="me-3" width="44" height="44">
+                        <h3 class="pe-lg-5 pe-md-0 me-3">00:30</h3>
+                        <img src="/assets/chef.png" alt="icon chef" class="me-3" width="44" height="44">
+                        <h3>Facil</h3>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="mini-nav d-flex justify-content-start ms-3 mb-2"><a href="/html/recettes.html" class="text-decoration-underline fst-italic">Recettes</a>&nbsp;&#155;&nbsp;<a href="/html/desserts.html" class="text-decoration-underline fst-italic">Desserts</a></div>
+            <div class="la-recette p-lg-5 p-md-1 p-sm-0">
+                <div class="row p-5">
+                    <div class="col-lg-6 col-md-6 col-sm-1">
+                        <h3 class="titre text-center">Ingrédients</h3>
+                        <p class="text-justify">&#x25CB; 3 1/4 tasse (770 ml) d'eau<br>
+                          &#x25CB; 30 g (1 oz) de poudre de cacao<br>
+                          &#x25CB; 30 g (1 oz) de sucre<br>
+                          &#x25CB; 1 1/4 tasse (300 ml) de crème 35% pour la cuisson<br>
+                          &#x25CB; 3,5 oz (100 g) de chocolat blanc<br>
+                          &#x25CB; 1/2 sachet (1 g) d'ALGINATE DE SODIUM<br>
+                          &#x25CB; 3/5 sachet (3 g) de LACTATE DE CALCIUM<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-1 justify-content-center">
+                            <div class="card card-yellow">
+                              <img src="/assets/deconstructiondecacao.png" alt="Déconstruction de cacao" >
+                          </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-1 titre text-justify">
+                        <h3 class="titre text-center">Préparation</h3>
+                        <p class="text-justify">SPHÉRIFICATION DU CACAO<br>
+
+                          &#x25CB; Mélanger 300 ml (11⁄4 tasses) d’eau, le sucre et le cacao en poudre.<br>
+                          &#x25CB; Porter à ébullition et laisser cuire pendant 2 min.<br> 
+                          &#x25CB; Incorporer l’ALGINATE DE SODIUM à l’aide d’un mixeur plongeant.<br>
+                          &#x25CB; Laisser reposer pendant 1 heure.<br>
+                          &#x25CB; Dissoudre le LACTATE DE CALCIUM dans 470 ml (2 tasses) d’eau 
+                            en remuant avec une cuillère.<br>
+                            &#x25CB; Remplir une pipette du mélange de cacao et en laisser tomber des gouttes
+                            dans le bain de calcium. Laisser reposer pendant 3 min.<br>
+                            &#x25CB; Vider le bain de lactate de calcium au-dessus d’une passoire de façon 
+                            à ne conserver que les billes de cacao. Rincer celles-ci à l’eau tiède.<br>
+                            
+                            CRÈME AU CHOCOLAT BLANC<br>
+                            
+                            &#x25CB; Porter la crème à ébullition et verser sur le chocolat blanc dans un bol en remuant.
+                            Laisser refroidir.
+                        </p>
+                    </div>
+                  </div>   
+              </div>    
+          </section>
+          <section class="mb-5 pb-5">
+            <div class="d-flex justify-content-center">
+                <h1 class="text-decoration-underline">Photos</h1>
+            </div>
+            <div class="album py-5 ">
+              <div class="container">        
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                      <div class="card card-yellow">
+                          <img src="/assets/deconstructiondecacao.png" alt="Déconstruction de cacao" >
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card card-yellow">
+                          <img src="/assets/deconstructiondecacao.png" alt="Déconstruction de cacao" >
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="card card-yellow">
+                          <img src="/assets/deconstructiondecacao.png" alt="Déconstruction de cacao" >
+                      </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="d-flex justify-content-center">
+                <h1 class="text-decoration-underline">Commentaires</h1>
+            </div>
+            <form class="mb-5 pb-5">
+                <div class="form-group row mb-5 pb-5">
+                    <div class="col-sm-12 col-lg-11 col-md-11 mx-auto mt-5 mb-3">
+                      <input type="email" class="commentaires form-control form-control-lg control-form py-4 px-5" id="colFormLabelLg" placeholder="Ecrire un commentaire...">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn-commentaires">ENVOYER</button>
+                    </div>
+                </div>
+              </form>
+          </section>
+          
+    </main>
+    <footer>
+      <div class="p-5 pb-3">
+          <div class="row flex-column flex-lg-row flex-md-row align-items-center">
+              <nav class="nav-footer col-10 d-flex flex-column flex-lg-row flex-md-row justify-content-start align-items-center">
+                  <a href="/html/index.html" class="active">Accueil</a>
+                  <a href="/html/recettes.html">Recettes</a>
+                  <a href="#">Contact</a>
+              </nav>
+              <div class="logos col-lg-2 col-md-2 col-sm-1 d-flex flex-row justify-content-center">
+                  <a href="#"><img src="/assets/instagram.png" alt="logo instagram"></a>
+                  <a href="#"><img src="/assets/facebook.png" alt="logo facebook"></a>
+                  <a href="#"><img src="/assets/twitter.png" alt="logo twitter"></a>
+              </div>
+          </div>
+          <p>Ⓒ2022, THIERRY MARX COOKING - Site de démonstration intégration</p>
+      </div>
+  </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
